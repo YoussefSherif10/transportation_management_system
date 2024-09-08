@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: password
+  pool: 5
+
+development:
+  <<: *default
+  database: transportation_management_system_development
+
+test:
+  <<: *default
+  database: transportation_management_system_test
+
+production:
+  <<: *default
+  database: transportation_management_system_production
+  username: transportation_management_system
+  password: <%= ENV['TRANSPORTATION_MANAGEMENT_SYSTEM_DATABASE_PASSWORD'] %>
