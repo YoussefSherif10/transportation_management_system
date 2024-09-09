@@ -38,6 +38,7 @@ gem 'bootsnap', require: false
 gem 'bcrypt'
 gem 'jsonapi-serializer'
 gem 'jwt'
+gem 'pagy'
 gem 'rack-cors'
 gem 'redis'
 gem 'sidekiq'
