@@ -42,6 +42,7 @@ gem 'pagy'
 gem 'rack-cors'
 gem 'redis'
 gem 'sidekiq'
+gem 'httparty'
 
 group :development, :test do
   gem 'factory_bot_rails'

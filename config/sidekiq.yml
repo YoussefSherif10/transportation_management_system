@@ -1,0 +1,4 @@
+:schedule:
+  fetch_trucks_job:
+    cron: '0 0 * * *'  # Run daily at midnight
+    class: FetchTrucksJob
